@@ -1,38 +1,11 @@
+main{
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+}
+
 .main-content {
-    margin-left: 100px;
-}
-
-.about-me,
-.txt {
-    max-width: 100%;
-    width: auto;
-}
-
-.about-me {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 750px;
-    height: 152px;
-    font-size: 4.5em;
-    font-weight: 600;
-    border-radius: 30px;
-}
-.txt {
-    background-color: var(--primary-color);
-    color: var(--txt-tarnary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 650px;
-    height: auto;
-
-    border-radius: 30px;
-    padding: 40px 50px;
-    font-size: 1.7em;
-    line-height: 35px;
+    margin-left: 7vw;
 }
 
 .about-me,
@@ -40,6 +13,41 @@
 .links {
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+.about-me {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(45vw - 6vw);
+    height: auto;
+    padding: 3vh 3vw;
+    font-size: 3rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+.txt {
+    background-color: var(--primary-color);
+    color: var(--txt-tarnary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(45vw - 6vw);
+    height: auto;
+
+    border-radius: 30px;
+    padding: 4vh 3vw;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
 
 .links {
     display: flex;
