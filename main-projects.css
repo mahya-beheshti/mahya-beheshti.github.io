@@ -1,0 +1,130 @@
+.projects-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    max-height: 40vh;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projects-box::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes scrollHint {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.projs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.projs::after {
+    content: "↓";
+    position: sticky;
+    bottom: 10px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 40px; 
+    height: 40px; 
+    min-height: 40px;
+    animation: scrollHint 2s infinite;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    z-index: 1;
+    pointer-events: none;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+}
+
+
+.projects-container {
+    display: contents;
+}
+
+.project {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    transition: scale 0.3s ease;
+    text-decoration: none;
+}
+
+.project:hover {
+    text-decoration: none;
+    scale: 1.01;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.project:active{
+    text-decoration: none;
+}
+
+.proj-pic {
+    width: 80%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
+}
+
+.summary {
+    width: 80%;
+    align-items: start;
+    padding: 0.5em 0;
+    background-color: rgb(56, 56, 92);
+    border-radius: 0 0 20px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.527);
+}
+
+.proj-name {
+    margin-left: 15px;
+    width: 100%;
+    color: var(--text-color);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.proj-tool {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color: rgba(238, 236, 235, 0.63);
+    font-size: clamp(0.5rem, 1vw, 0.8rem);
+    font-weight: 100;
+}
+
+@media (max-width: 1000px) {
+    .projects-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

@@ -1,17 +1,3 @@
-main {
-    margin-top: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.main-content {
-    margin-left: 2rem; 
-    padding-right: 1rem; 
-    width: 100%;
-    max-width: 800px; 
-    box-sizing: border-box;
-}
-
 .txt {
     background-color: var(--primary-color);
     color: var(--txt-tarnary-color);
@@ -49,55 +35,6 @@ main {
     border-radius: 4px;
 }
 
-.about-me {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    font-weight: 600;
-    border-radius: 30px;
-    text-align: center;
-    margin-bottom: 2rem;
-    box-sizing: border-box;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px; 
-    height: 60px; 
-    background-color: var(--links-background-color);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0.5rem;
-    box-sizing: border-box;
-}
-
-.links:hover {
-    transform: scale(1.02) translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.container {
-    width: 3vw;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-
-.container:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

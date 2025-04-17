@@ -25,9 +25,18 @@ nav {
     transition: background-color 0.5s ease;
 }
 
-.box.home {
+.home-page .box.home{
     background-color: var(--secondary-color);
 }
+
+.project-page .box.projects{
+    background-color: var(--secondary-color);
+}
+
+.skills-page .box.skills{
+    background-color: var(--secondary-color);
+}
+
 
 .icon {
     width: 2.5em;

@@ -4,55 +4,175 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mahya Beheshti</title>
-        <link rel="stylesheet" href="styles.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="header.css" />
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="main-projects.css" />
+        <link rel="stylesheet" href="side-bar.css" />
     </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="home box">
-                <div class="home-icon" aria-label="Home"></div>
-                <span>Home</span>
-            </a>
-            <a href="projects.html" class="projects box">
-                <div class="projects-icon" aria-label="Projects"></div>
-                <span>Projects</span>
-            </a>
-            <a href="skills.html" class="skills box">
-                <div class="skills-icon" aria-label="Skills"></div>
-                <span>Skills</span>
-            </a>
-        </nav>
-    </header>
-    <div class="side-bar">
-        <div class="profile"></div>
-        <div class="name">
-            <div class="side-line"></div>
-            <div class="fullname">Mahya Beheshti</div> 
-            <div class="title">Software Developer</div> 
-            <button class="connect">Let's talk</button> 
+    <body>
+        <div class="all project-page">
+            <header>
+                <nav>
+                    <a href="home.html" class="home box">
+                        <img
+                            src="./assets/home-1-svgrepo-com (4).svg"
+                            class="home icon"
+                        />
+                    </a>
+                    <a href="projects.html" class="projects box">
+                        <img
+                            src="./assets/folder-svgrepo-com (2).svg"
+                            class="projects icon"
+                        />
+                    </a>
+                    <a href="skills.html" class="skills box">
+                        <img
+                            src="./assets/user-svgrepo-com (1).svg"
+                            class="skills icon"
+                        />
+                    </a>
+                </nav>
+            </header>
+            <main>
+                <div class="side-bar">
+                    <div class="profile">
+                        <img
+                            src="./assets/profile.png"
+                            alt="profile picture"
+                            class="pic"
+                        />
+                    </div>
+                    <div class="name">
+                        <div class="side-line"></div>
+                        <div class="title">
+                            <div class="full-name">
+                                Mahya
+                                <br />
+                                Beheshti
+                            </div>
+                            <div class="role">Software Developer</div>
+                        </div>
+                    </div>
+                    <a href="mailto:beheshtimahya11@gmail.com" class="connect"
+                        >Let's talk</a
+                    >
+                </div>
+
+                <div class="main-content">
+                    <div class="section">Recent Projects</div>
+                    <div class="projs">
+                        <div class="projects-box">
+                            <a
+                                href="https://github.com/mahya-beheshti/Django-store"
+                                target="_blank"
+                                class="project-1 project"
+                            >
+                                <img
+                                    src="./assets/projects/DjangoStore.png"
+                                    alt="Project image"
+                                    class="proj-pic"
+                                />
+                                <div class="summary">
+                                    <div class="proj-name">Django store</div>
+                                    <div class="proj-tool">
+                                        Tools: Django, MySQL, Python
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="https://github.com/mahya-beheshti/Farsi-Search-Engine"
+                                target="_blank"
+                                class="project-2 project"
+                            >
+                                <img
+                                    src="./assets/projects/FarsiSearchEngine.png"
+                                    alt="Project image"
+                                    class="proj-pic"
+                                />
+                                <div class="summary">
+                                    <div class="proj-name">Search Enginge</div>
+                                    <div class="proj-tool">
+                                        Tools: Python, Hazm
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="https://github.com/mhssonic/Flutter"
+                                target="_blank"
+                                class="project-3 project"
+                            >
+                                <img
+                                    src="./assets/projects/Twitter.png"
+                                    alt="Project image"
+                                    class="proj-pic"
+                                />
+                                <div class="summary">
+                                    <div class="proj-name">Twitter Back</div>
+                                    <div class="proj-tool">
+                                        Tools: Java, PostgereSQL
+                                    </div>
+                                </div>
+                            </a>
+                            <a
+                                href="https://github.com/mahya-beheshti/xv6-demo"
+                                target="_blank"
+                                class="project-4 project"
+                            >
+                                <img
+                                    src="./assets/projects/xv6-demo.png"
+                                    alt="Project image"
+                                    class="proj-pic"
+                                />
+                                <div class="summary">
+                                    <div class="proj-name">Xv6 Demo</div>
+                                    <div class="proj-tool">
+                                        Tools: C, Assembly
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="links">
+                        <a
+                            href="https://www.linkedin.com/in/mahyabeheshti/"
+                            class="linkedin container"
+                            aria-label="LinkedIn"
+                        >
+                            <img
+                                src="./assets/linkedin-svgrepo-com.svg"
+                                class="linkedin icon"
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/mahya-beheshti"
+                            class="github container"
+                            aria-label="GitHub"
+                        >
+                            <img
+                                src="./assets/github-svgrepo-com.svg"
+                                class="github icon"
+                            />
+                        </a>
+                        <a
+                            href="#"
+                            class="twitter container"
+                            aria-label="Twitter"
+                        >
+                            <img
+                                src="./assets/twitter-svgrepo-com.svg"
+                                class="twitter icon"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </main>
         </div>
-    </div>
-    <main>
-        <div class="about-me">About me</div> 
-        <p class="txt">
-            Motivated Computer Engineering student with hands-on experience
-            in back-end development & AI-driven applications. Skilled in
-            Python, Django, Java and C++ with strong problem-solving
-            abilities. Passionate about building systems that solve
-            real-world problems. Seeking opportunities in back-end
-            development.
-        </p>
-        <div class="links">
-            <a href="#" class="linkedin container" aria-label="LinkedIn"> 
-                <div class="linkedin icon"></div>
-            </a>
-            <a href="#" class="github container" aria-label="GitHub">
-                <div class="github icon"></div>
-            </a>
-            <a href="#" class="twitter container" aria-label="Twitter">
-                <div class="twitter icon"></div>
-            </a>
-        </div>
-    </main>
-</body>
+    </body>
 </html>

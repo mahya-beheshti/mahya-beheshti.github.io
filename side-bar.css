@@ -13,7 +13,7 @@
     padding-bottom: 0;
     width: 100%;
     max-width: 350px;
-    min-width: 200px;
+    min-width: 100px;
     height: auto;
     min-height: 75vh;
     background-color: var(--primary-color);
@@ -59,8 +59,7 @@
 
 .role {
     color: var(--txt-secondary-color);
-    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font sizing */
-    margin-top: 0.5em;
+    font-size: clamp(1rem, 2.5vw, 1.2rem); 
 }
 
 .connect {
@@ -72,15 +71,15 @@
     background-color: var(--secondary-color);
     color: var(--text-color);
 
-    width: 80%; /* Percentage based */
-    max-width: 250px; /* Limit maximum width */
+    width: 80%; 
+    max-width: 250px; 
     height: auto;
     border-radius: 50px 50px 0 0;
     border: none;
 
-    font-size: clamp(1.2rem, 3vw, 1.8rem); /* Responsive font sizing */
+    font-size: clamp(1.2rem, 3vw, 1.8rem); 
     font-weight: 600;
-    padding: 1.5rem 1rem 1rem 1rem; /* Fixed padding */
+    padding: 1.5rem 1rem 1rem 1rem; 
     box-sizing: border-box;
 }
 
