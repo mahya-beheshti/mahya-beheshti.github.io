@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     max-height: 40vh;
-    padding-top: 10px;
+    padding-top: 0.5rem;
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -32,8 +32,8 @@
     font-weight: 500;
 }
 .skill-icon-box{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: 0 10px;
     background-color: rgba(226, 221, 220, 1);
     border: 5px solid rgba(232, 228, 228, 1);
@@ -44,8 +44,8 @@
 }
 
 .skill-icon{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
