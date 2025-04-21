@@ -4,9 +4,11 @@
     align-items: center;
     justify-content: center;
     max-height: 40vh;
+    padding-top: 10px;
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+
 }
 
 .skill-box{
@@ -15,6 +17,12 @@
     align-items: center;
     justify-content: center;
     margin: 0 5px 0 5px;
+    transition: scale 1s ease;
+
+}
+
+.skill-box:hover{
+    scale: 1.05;
 }
 
 .skill-name{
