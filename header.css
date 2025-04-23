@@ -18,6 +18,8 @@ nav {
     justify-content: center;
     margin: 1em;
     border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .box:hover {
@@ -25,22 +27,38 @@ nav {
     transition: background-color 0.5s ease;
 }
 
-.home-page .box.home{
+.home-page .box.home {
     background-color: var(--secondary-color);
 }
 
-.project-page .box.projects{
+.project-page .box.projects {
     background-color: var(--secondary-color);
 }
 
-.skills-page .box.skills{
+.skills-page .box.skills {
     background-color: var(--secondary-color);
 }
-
 
 .icon {
     width: 2.5em;
     height: 2.5em;
     filter: brightness(0) saturate(100%) invert(94%) sepia(5%) saturate(1412%)
         hue-rotate(314deg) brightness(107%) contrast(96%);
+}
+
+.box:hover .icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    nav {
+        margin-top: 1em;
+        border-radius: 20px;
+    }
+    .box {
+        margin: 0.5em;
+        width: 3.5em;
+        height: 3.5em;
+    }
 }
