@@ -29,8 +29,7 @@
 }
 
 .pic {
-    max-width: 300px;
-    min-width: 250px;
+    max-width: 350px;
     max-height: 250px;
     height: auto;
     /* aspect-ratio: 300 / 284; */
@@ -87,6 +86,7 @@
 .role {
     color: var(--txt-secondary-color);
     font-size: clamp(1rem, 2.5vw, 1.2rem);
+    padding-bottom: 1rem;
 }
 
 .connect {
