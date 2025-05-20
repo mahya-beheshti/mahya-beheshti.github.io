@@ -32,7 +32,6 @@
     max-width: 350px;
     max-height: 250px;
     height: auto;
-    /* aspect-ratio: 300 / 284; */
     border-radius: 50px 50px 10px 10px;
     margin-bottom: 1rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
